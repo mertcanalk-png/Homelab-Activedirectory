@@ -118,4 +118,3 @@ same identity tasks in the cloud.
 
 ---
 
-*Built and documented by Mertcan (Matt) Alkaya — Brisbane, QLD.*
