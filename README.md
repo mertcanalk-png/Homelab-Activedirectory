@@ -252,13 +252,6 @@ VirtualBox internal networking.
 The complete step-by-step summary is in
 [docs/Home_Lab_Day2_Summary.pdf](docs/).
 
-## Next session
-
-**Day 3** — Move to the cloud: sign up for a Microsoft 365 Developer tenant and
-repeat the core identity tasks (user creation, password reset, lockout) in
-**Entra ID**, then explore how on-prem and cloud identity connect (hybrid
-concepts).
-
 ---
 
 *Built and documented by Mertcan (Matt) Alkaya — Brisbane, QLD.*
