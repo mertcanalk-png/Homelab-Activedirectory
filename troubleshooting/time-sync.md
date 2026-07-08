@@ -114,16 +114,6 @@ Key facts I picked up:
 
 ---
 
-## Open item (being honest)
-
-Both VMs are on a VirtualBox **Internal Network** but show a default gateway of
-`10.0.2.2` — which is actually VirtualBox's **NAT** gateway. On a truly isolated
-internal network there is usually no gateway. It doesn't break client-to-DC traffic
-(same subnet, no gateway needed), but it's an inconsistent leftover setting I want
-to verify with `ipconfig /all` and clean up. Noting it rather than hiding it.
-
----
-
 ## Skills demonstrated
 
 Time-sync troubleshooting · timezone vs drift vs sync isolation · `w32tm` ·
