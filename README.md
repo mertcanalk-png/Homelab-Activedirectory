@@ -254,5 +254,17 @@ The complete step-by-step summary is in
 
 ---
 
+## Troubleshooting logs
+
+Real problems I've hit while building and running the lab, and how I diagnosed and
+fixed each one. Documenting the failures is the point — troubleshooting is the
+actual skill.
+
+- [Time, timezone & DC networking](troubleshooting/time-sync.md) — untangling a
+  multi-part time-sync issue with live `w32tm` evidence that the client syncs from
+  the domain controller.
+  
+---
+  
 *Built and documented by Mertcan (Matt) Alkaya — Brisbane, QLD.*
 
