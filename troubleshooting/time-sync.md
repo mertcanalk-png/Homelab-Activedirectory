@@ -10,7 +10,7 @@ match") had several possible causes that had to be separated one at a time.
 The environment: a Windows Server 2022 domain controller (DC01, running AD DS and
 DNS) and a domain-joined Windows 11 client (CLIENT01), both in VirtualBox.
 
-![DC01 running AD DS and DNS, with the client alongside](screenshots/lab-dc01-adds-dns-running.png)
+![DC01 running AD DS and DNS, with the client alongside](../screenshots/lab-dc01-adds-dns-running.png)
 
 ---
 
@@ -86,7 +86,7 @@ I confirmed the client end of this chain is working. Running `w32tm /query /stat
 on CLIENT01 shows it is syncing from the domain controller, not from the internet
 or the host:
 
-![Client syncing time from DC01](screenshots/timesync-client-synced-from-dc.png)
+![Client syncing time from DC01](../screenshots/timesync-client-synced-from-dc.png)
 
 The lines that prove it: `Source: DC-01.corp.lab.local` and
 `ReferenceId ... source IP: 10.0.2.15` (DC01's address). `Stratum: 2` means the
@@ -96,7 +96,7 @@ On the DC, `w32tm /query /configuration` confirms the correct mode for a domain
 machine — `Type: NT5DS` (sync from the domain hierarchy, not a manually set NTP
 server):
 
-![DC time configuration showing NT5DS](screenshots/timesync-dc-config-nt5ds.png)
+![DC time configuration showing NT5DS](../screenshots/timesync-dc-config-nt5ds.png)
 
 Key facts I picked up:
 - A domain-joined client should sync from the domain, not directly from the
